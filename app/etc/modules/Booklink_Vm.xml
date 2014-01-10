@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Booklink_Vm>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Booklink_Vm>
+        <depends>
+            <Mage_Payment />
+        </depends>
+    </modules>
+</config> 

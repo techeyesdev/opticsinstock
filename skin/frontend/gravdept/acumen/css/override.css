@@ -1,0 +1,121 @@
+/**
+ * Acumen for Magento
+ * http://gravitydept.com/to/acumen-magento
+ *
+ * @author     Brendan Falkowski
+ * @package    gravdept_acumen
+ * @copyright  Copyright 2011 Gravity Department http://gravitydept.com
+ * @license    All rights reserved.
+ * @version    1.1.0
+ */
+
+/*--------------------------------------------------------------------------------------------------*/
+/*  CUSTOM OVERRIDES FOR BASE.CSS
+/*--------------------------------------------------------------------------------------------------*/
+
+/* your code here */
+
+p{margin-bottom: 0;}
+tr{border: 1px solid #000000; border: none;}
+td{padding:5px; border: none;}
+.promo-title{font-size: 18px;}
+#logo{
+	max-width: none;
+	margin-top: 15px;
+}
+.promo-slider-right .promos {
+	top: 10px;
+}
+#search-form{
+	background-color: #f8f8f8;
+	border: 1px #e0e0e0 solid;
+}
+.promo-slider .slides-container{
+	top:12px;
+}
+.grid-slider .slides-container a:hover:after,
+.promo-slider .slides-container a:hover:after,
+.promo-slider .promos li a:hover:after,
+.static-promo a:hover:after,
+.wide-slider .slides-container a:hover:after,
+.thumb-slider .slides-container a:hover:after,
+.thumb-slider .slides-pagination li a:hover:after{ display:block; content:''; position:absolute; left:0; top:0; z-index:1; width:100%; height:100%; border:5px solid #b2b3b3; cursor:pointer;
+        -moz-box-sizing:border-box;
+        -ms-box-sizing:border-box;
+        -webkit-box-sizing:border-box;
+        box-sizing:border-box;
+        }
+#nav li.level1 > a:first-child{
+	margin-bottom: 5px;
+	font-size: 14px;
+}
+#matter{
+	margin: 0px 15px;
+}
+h1{
+	margin: 10px 0px;
+}
+.menu{padding: 1px; background: #ddd;}
+#nav li.level0 > a{
+	font-size: 13.4px;
+	}
+#nav li.level1{width: 200px;}
+#nav li.level0{padding: 0px 4px;}
+#nav .cols-6, #nav .cols-5, #nav .cols-3, #nav .cols-4{width: 220px;}
+#promotion-blocks ul a{text-decoration: none;}
+#promotion-blocks ul a li{
+	width: 100%;
+	height: 100px;
+	color: #000000;
+	font-size: 72px;
+	text-align: center;
+	margin: 10px 0px;
+	background-color: #E2E2E2;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+#promotion-blocks ul a li:hover{
+	background-color: #f6f6f6;
+}
+/* =============================================================================
+   Product Page
+   ========================================================================== */
+.in-stock span{
+	color: #000000;
+	font-size: 14px;
+}
+#footer-bar{margin-top: 15px;}
+.grid-block{margin: 0;}
+.price-box .price{font-size: 20px; color:#0AD;}
+.right{float: right;}
+.left{float: left;}
+.left li, .right li{margin-bottom: 0px;}
+/* =============================================================================
+   Brands
+   ========================================================================== */
+#brands-container{
+	width: 960px;
+	margin: 0 auto;
+
+}
+#brands-container .category-letter{
+	color: #000000;
+	font-size: 20px;
+}
+.brands-list-block{
+	text-align: center;
+}
+.brands-list-block a{
+	margin: 3px;
+}
+.brands-letter-list{
+	list-style-type: circle;
+}
+.listing{
+	padding: 10px;
+	margin: 5px 0 5px 0;
+	border: 1px solid #e0e0e0;
+	background: #f8f8f8;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+}

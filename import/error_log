@@ -1,0 +1,37 @@
+[12-Aug-2013 08:17:31 America/New_York] PHP Warning:  Module 'SQLite' already loaded in Unknown on line 0
+[16-Aug-2013 18:10:27 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'techey5_databse2.catalog_product_flat_1' doesn't exist' in /home/techey5/public_html/opticsinstock.com/lib/Zend/Db/Statement/Pdo.php:228
+Stack trace:
+#0 /home/techey5/public_html/opticsinstock.com/lib/Zend/Db/Statement/Pdo.php(228): PDOStatement->execute(Array)
+#1 /home/techey5/public_html/opticsinstock.com/lib/Varien/Db/Statement/Pdo/Mysql.php(110): Zend_Db_Statement_Pdo->_execute(Array)
+#2 /home/techey5/public_html/opticsinstock.com/lib/Zend/Db/Statement.php(300): Varien_Db_Statement_Pdo_Mysql->_execute(Array)
+#3 /home/techey5/public_html/opticsinstock.com/lib/Zend/Db/Adapter/Abstract.php(479): Zend_Db_Statement->execute(Array)
+#4 /home/techey5/public_html/opticsinstock.com/lib/Zend/Db/Adapter/Pdo/Abstract.php(238): Zend_Db_Adapter_Abstract->query('SELECT COUNT(DI...', Array)
+#5 /home/techey5/public_html/opticsinstock.com/lib/Varien/Db/Adapter/Pdo/Mysql.php(419): Zend_Db_Adapter_Pdo_Abstract->query('SE in /home/techey5/public_html/opticsinstock.com/lib/Zend/Db/Statement/Pdo.php on line 234
+[23-Aug-2013 06:31:38 America/New_York] PHP Warning:  Module 'SQLite' already loaded in Unknown on line 0
+[23-Aug-2013 07:07:07 America/New_York] PHP Warning:  Module 'SQLite' already loaded in Unknown on line 0
+[23-Aug-2013 07:09:11 America/New_York] PHP Warning:  Module 'SQLite' already loaded in Unknown on line 0
+[23-Aug-2013 07:09:29 America/New_York] PHP Warning:  Module 'SQLite' already loaded in Unknown on line 0
+[23-Aug-2013 07:09:52 America/New_York] PHP Warning:  Module 'SQLite' already loaded in Unknown on line 0
+[23-Aug-2013 07:10:55 America/New_York] PHP Warning:  Module 'SQLite' already loaded in Unknown on line 0
+[23-Aug-2013 07:11:25 America/New_York] PHP Warning:  Module 'SQLite' already loaded in Unknown on line 0
+[23-Aug-2013 07:11:39 America/New_York] PHP Warning:  Module 'SQLite' already loaded in Unknown on line 0
+[23-Aug-2013 07:15:03 America/New_York] PHP Warning:  Module 'SQLite' already loaded in Unknown on line 0
+[23-Aug-2013 08:48:00 America/New_York] PHP Warning:  Module 'SQLite' already loaded in Unknown on line 0
+[20-Nov-2013 20:28:40 UTC] PHP Fatal error:  Maximum execution time of 3000 seconds exceeded in /home/techey5/public_html/opticsinstock.com/app/code/core/Mage/Eav/Model/Entity/Abstract.php on line 519
+[21-Nov-2013 20:30:06 UTC] PHP Fatal error:  Maximum execution time of 3000 seconds exceeded in /home/techey5/public_html/opticsinstock.com/lib/Zend/Db/Statement.php on line 192
+[22-Nov-2013 20:40:06 UTC] PHP Fatal error:  Maximum execution time of 3000 seconds exceeded in /home/techey5/public_html/opticsinstock.com/lib/Varien/Object.php on line 624
+[23-Nov-2013 20:33:00 UTC] PHP Fatal error:  Maximum execution time of 3000 seconds exceeded in /home/techey5/public_html/opticsinstock.com/app/code/core/Mage/Eav/Model/Config.php on line 405
+[24-Nov-2013 20:34:12 UTC] PHP Fatal error:  Maximum execution time of 3000 seconds exceeded in /home/techey5/public_html/opticsinstock.com/lib/Varien/Db/Adapter/Pdo/Mysql.php on line 0
+[25-Nov-2013 20:32:59 UTC] PHP Fatal error:  Maximum execution time of 3000 seconds exceeded in /home/techey5/public_html/opticsinstock.com/app/code/core/Mage/Eav/Model/Entity/Abstract.php on line 457
+[26-Nov-2013 20:33:24 UTC] PHP Fatal error:  Maximum execution time of 3000 seconds exceeded in /home/techey5/public_html/opticsinstock.com/lib/Zend/Db/Select.php on line 336
+[27-Nov-2013 20:32:46 UTC] PHP Fatal error:  Maximum execution time of 3000 seconds exceeded in /home/techey5/public_html/opticsinstock.com/app/code/core/Mage/Index/Model/Event.php on line 335
+[28-Nov-2013 20:36:45 UTC] PHP Fatal error:  Maximum execution time of 3000 seconds exceeded in /home/techey5/public_html/opticsinstock.com/app/code/core/Mage/Eav/Model/Config.php on line 0
+[29-Nov-2013 20:34:46 UTC] PHP Fatal error:  Maximum execution time of 3000 seconds exceeded in /home/techey5/public_html/opticsinstock.com/import/gas.php on line 149
+[30-Nov-2013 20:32:18 UTC] PHP Fatal error:  Maximum execution time of 3000 seconds exceeded in /home/techey5/public_html/opticsinstock.com/lib/Varien/Db/Select.php on line 278
+[01-Dec-2013 20:31:24 UTC] PHP Fatal error:  Maximum execution time of 3000 seconds exceeded in /home/techey5/public_html/opticsinstock.com/lib/Zend/Db/Adapter/Pdo/Abstract.php on line 184
+[02-Dec-2013 20:32:28 UTC] PHP Fatal error:  Maximum execution time of 3000 seconds exceeded in /home/techey5/public_html/opticsinstock.com/app/code/core/Mage/Eav/Model/Config.php on line 405
+[03-Dec-2013 20:36:50 UTC] PHP Fatal error:  Maximum execution time of 3000 seconds exceeded in /home/techey5/public_html/opticsinstock.com/lib/Zend/Db/Statement/Pdo.php on line 0
+[04-Dec-2013 20:33:49 UTC] PHP Fatal error:  Maximum execution time of 3000 seconds exceeded in /home/techey5/public_html/opticsinstock.com/lib/Zend/Db/Adapter/Abstract.php on line 1044
+[06-Dec-2013 20:34:02 UTC] PHP Fatal error:  Maximum execution time of 3000 seconds exceeded in /home/techey5/public_html/opticsinstock.com/lib/Varien/Object.php on line 702
+[08-Dec-2013 20:32:19 UTC] PHP Fatal error:  Maximum execution time of 3000 seconds exceeded in /home/techey5/public_html/opticsinstock.com/lib/Zend/Db/Statement/Pdo.php on line 253
+[09-Dec-2013 20:33:33 UTC] PHP Fatal error:  Maximum execution time of 3000 seconds exceeded in /home/techey5/public_html/opticsinstock.com/lib/Zend/Db/Statement/Pdo.php on line 228
