@@ -197,7 +197,7 @@ aside.sidebar-right { float: right !important;}
 	padding-top:1.66em;
 	box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.2) inset;
 }
-.content-wrapper .main-container{padding-top:1.5em;}
+.content-wrapper .main-container{padding-top:0em;}
 
 .column-wrapper{background-color:#FFF;  display: inline-block; box-shadow:0 0 5px rgba(0, 0, 0, 0.07); padding-top: 1.83em;}
 .col2-left-layout .column-wrapper{margin-left: 15px; float: right;}
@@ -218,8 +218,8 @@ aside.sidebar-right { float: right !important;}
     display:none;
     text-decoration:none;
     position:fixed;
-    bottom:170px;
-    right:50px;
+    bottom:10px;
+    right:10px;
     overflow:hidden;
     width:32px;
     height:32px;
@@ -563,7 +563,7 @@ nav.breadcrumbs {
 	font-size:0.84em;
 	line-height: 1.5em;
 	color:#aaa;
-	margin:-0.7em 0;
+	margin:-1.7em 0;
 }
 nav.breadcrumbs li { display:inline; }
 nav.breadcrumbs li i{margin:0 2px; font-size: 0.7em;}
@@ -1495,12 +1495,6 @@ header#header .top-cart button.button span{}
 
 /* Header Slider */
 .header-slider-holder{
-	padding: 1.09em 0 1.2em;
-	margin: 1.5em 0 0;
-	border: 1px solid #ddd;
-	border-left: none;
-	border-right: none;
-	position: relative;
 }
 .header-slider-holder.boxed{padding-bottom: 1.5em;}
 .header-slider-holder.loading{
@@ -1574,8 +1568,6 @@ header#header .top-cart button.button span{}
 	display: block;
 	position:relative;
 	z-index:7;
-	margin: 0 10px;
-    padding: 11px;
 	background: #FFFFFF;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
@@ -1746,7 +1738,7 @@ header#header .nav-container .sbSelector{display:none;}
 /* 1st Level */
 .nav > li{
 	float:left;
-	padding:0 20px;
+	padding:0 8px;
 	border:1px solid #fff;
 	margin-right:1px;
 }
@@ -1763,7 +1755,6 @@ header#header .nav-container .sbSelector{display:none;}
 }
 
 .nav > li.active:before{
-	content: '\00B7';
 	position: absolute;
 	left: 4px;
 	top: 1px;
@@ -1771,7 +1762,6 @@ header#header .nav-container .sbSelector{display:none;}
 	line-height: 1.1em;
 }
 .nav > li.active:after{
-	content: '\00B7';
 	position: absolute;
 	right: 4px;
 	top: 1px;
