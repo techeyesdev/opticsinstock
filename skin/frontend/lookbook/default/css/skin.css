@@ -61,7 +61,7 @@ header#header .menu-button:after,
 .products-list .btn-quick-view span span,
 .nav > li.active:before,
 .nav > li.active:after,
-.nav li.active a{color:#ABABAB;}
+.nav li.active a{color:#949494;}
 
 aside.sidebar section.block-layered-nav #slider-range.ui-slider .ui-slider-handle,
 #login-holder .close-button,
@@ -95,11 +95,11 @@ aside.sidebar .actions a,
 header#header .top-cart .block-content button.button > span,
 header#header .top-cart .img-container .cart-price-qt,
 header#header .top-cart .block-title .cart-button .button-arrow,
-header#header .top-cart .block-title .cart-button{background-color:#ABABAB;}
+header#header .top-cart .block-title .cart-button{background-color:#949494;}
 
 .products-grid .top-box,
 .products-list .top-box{
-	background-color:rgba(171,171,171, 0.98);
+	background-color:rgba(148,148,148, 0.98);
 }
 
 
@@ -108,5 +108,5 @@ header#header .menu-button span:after,
 .products-grid .btn-quick-view span span,
 .products-list .btn-quick-view span span,
 .nav > li.active > a:after{
-	border-color: #ABABAB;
+	border-color: #949494;
 }
