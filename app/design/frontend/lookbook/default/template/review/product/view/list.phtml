@@ -61,7 +61,7 @@
 							
 						</div>
 						<div class="rev-col-2">
-							<h6><?php echo $this->htmlEscape($_review->getTitle()) ?></h6>
+							<h6><a href="<?php echo $this->getReviewUrl($_review->getId()) ?>"><?php echo $this->htmlEscape($_review->getTitle()) ?></a></h6>
 							<small><?php 
 								echo $this->__('Review by <span>%s</span>', $this->htmlEscape($_review->getNickname())); 
 								echo $this->__('on %s', $this->formatDate($_review->getCreatedAt()), 'long') ?></small>

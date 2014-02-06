@@ -88,8 +88,6 @@
 							   <p class="availability out-of-stock"><i class="icon-remove"></i><?php echo $this->__('Out of stock') ?></p>
 							<?php endif; ?>
 							<div class="product-name">
-																		<h2><?php echo 'SKU:&nbsp;<span>'.$_product->getSku().'</span>' ?></h2>
-
 							   <h2><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></h2>
 							</div>
 							<div class="clear"></div>
@@ -130,6 +128,7 @@
 										if(($_product->getTypeId() == 'simple') and ($this->getChildChildHtml('container1', '', true, true)) and ($this->hasOptions())){$isKeyAvaliable = true;}
 										?>
 									<?php if($isKeyAvaliable == false): ?>
+									                           <h2><?php echo 'SKU:&nbsp;<span>'.$_product->getSku().'</span>' ?></h2>
 									<div class="price-button-box">
 									<?php endif; ?>
 
@@ -138,7 +137,6 @@
 												<?php echo $this->getChildHtml('product_type_data'); ?>
 											<?php endif; ?>
 										<?php endif; ?>
-
 										<?php if (!$this->hasOptions()):?>
 										<div class="product-type-block">
 											<div class="add-to-box">

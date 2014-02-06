@@ -29,7 +29,7 @@
 						<?php echo $this->getChildHtml('footer_links') ?>
 					</dd>
 				</dl>
-				<p class="welcome-msg"><?php echo $this->getChildHtml('welcome') ?> <?php echo $this->getAdditionalHtml() ?></p>
+				<p class="welcome-msg"><?php echo $this->getWelcome() ?><?php echo $this->getAdditionalHtml() ?></p>
 				<?php if ($header['header_type'] == 'header_1'): ?>
 					<?php echo $this->getChildHtml('cart_sidebar') ?>
 				<?php endif; ?>
@@ -38,7 +38,7 @@
 			<div class="clear"></div>
 		</div>
 	</div>
-	<div class="header-wrapper <?php if ($header['header_type'] == 'header_2'): ?>header-2<?php endif; ?>"<?php if (Mage::getStoreConfig('meigee_lookbook_general/header/floatingheader') == 1): ?> id="floating-header"<?php endif; ?>>
+	<div class="header-wrapper">
 		<div class="container_12">
 			<div class="grid_3">
 				<?php if ($customlogo['logo_status'] == 0): ?>
@@ -67,6 +67,21 @@
 			<?php echo $this->getChildHtml('topContainer'); ?>
 		</div>
 	</div>
+	<?php if (Mage::getStoreConfig('meigee_lookbook_general/menu/floatingmenu') == 1): ?>
+	<div id="floating-menu">
+		<div class="container_12">
+			<div class="grid_12">
+				<?php if ($customlogo['logo_status'] == 0): ?>
+					<h1 class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><img src="<?php echo $this->getLogoSrc() ?>" <?php echo MAGE::helper('ThemeOptionsLookbook/Retina')->getRetinaData('logo'); ?> alt="<?php echo $this->getLogoAlt() ?>" /></a></h1>
+					<?php else:?>
+					<h1 class="logo"><strong><?php echo $customlogo['logo_alt']; ?></strong><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $customlogo['logo_alt']; ?>" class="logo"><img src="<?php echo $mediaurl.$customlogo['logo']; ?>" <?php echo MAGE::helper('ThemeOptionsLookbook/Retina')->getRetinaData('logo_custom'); ?> alt="<?php echo $customlogo['logo_alt']; ?>" /></a></h1>
+				<?php endif; ?>
+				<?php echo $this->getChildHtml('topMenu') ?>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<?php endif; ?>
 </header>
 <?php echo $this->getChildHtml('header_slider_container') ?>
 <?php if(Mage::getStoreConfig('meigee_lookbook_general/loginajax/status')): ?>
