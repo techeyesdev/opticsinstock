@@ -1078,7 +1078,6 @@ header#header .header-wrapper{
 header#header .logo {
     text-decoration:none;
     overflow:hidden;
-    float:left;
     text-decoration: none;
     -moz-transition: none;
     -webkit-transition: none;
@@ -4268,8 +4267,8 @@ span.label-sale{background-color:#d3626a; top:43px;}
     line-height:1.57em;
     position:relative;
     overflow:hidden;
-	text-transform: uppercase;
-	font-weight: bold;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 .meigee-tabs a:hover,
 .meigee-tabs li.active a,
