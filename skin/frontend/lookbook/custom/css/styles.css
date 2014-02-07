@@ -2933,9 +2933,6 @@ span.label-sale{background-color:#d3626a; top:43px;}
 	height: auto;
 	padding-top: 8px;
 }
-.products-list .price-button-box button.button span span{
-    padding-top: 14px;
-}
 .price-button-box .animation-pane{
 	position: absolute;
 	left: 0;
@@ -6355,6 +6352,18 @@ body.firefox #onepagecheckout_orderform .onepagecheckout_datafields #checkout-pa
 	left: -2px;
 }
 #footer .block-subscribe .validation-advice{padding-top:0.42em;}
+
+
+.payment-icons-box { margin-bottom:15px; padding-bottom:15px; border-bottom:1px solid #E0E0E0; }
+
+.payment-icons-list { overflow:hidden; }
+.payment-icons-list li { float:left; width:44px; height:28px; margin-right:10px; background:url(../img/icon/sprite.png); text-indent:-9999px; }
+.payment-icons-list li:last-child { margin-right:0; }
+.payment-icons-list .visa { background-position:-530px 0; }
+.payment-icons-list .mastercard { background-position:-530px -30px; }
+.payment-icons-list .amex { background-position:-530px -60px; }
+.payment-icons-list .discover { background-position:-530px -90px; }
+.payment-icons-list .paypal { background-position:-530px -120px; }
 
 #footer .form-language,
 #footer .form-currency{float:right;}

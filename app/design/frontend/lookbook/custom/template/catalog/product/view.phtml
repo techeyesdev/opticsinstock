@@ -100,9 +100,18 @@
 									<?php echo $this->getReviewsSummaryHtml($_product, false, true)?>
 									<?php if ($_product->getShortDescription()):?>
 									   <div class="short-description">
-										   <div class="std"><h2><?php echo $this->__('Details:') ?></h2><?php echo $_helper->productAttribute($_product, nl2br($_product->getShortDescription()), 'short_description') ?></div>
+										   <div class="std"><h3><?php echo $this->__('Details:') ?></h3><?php echo $_helper->productAttribute($_product, nl2br($_product->getShortDescription()), 'short_description') ?></div>
+										   <ul class="std product-attributes">
+										<li>
+											<?php echo '<h3>SKU:&nbsp;</h3>'.$_product->getSku() ?>
+										</li>
+										<li>
+											<?php echo '<h3>UPC:&nbsp;</h3>'.$_product->getUpc ?>
+										</li>
+									</ul>
 									   </div>
 								   <?php endif;?>
+
 								</div>
 								<div class="product-right-col<?php
 										if($_product->getTypeId() == Mage_Catalog_Model_Product_Type::TYPE_GROUPED){echo ' grouped';}
@@ -128,7 +137,6 @@
 										if(($_product->getTypeId() == 'simple') and ($this->getChildChildHtml('container1', '', true, true)) and ($this->hasOptions())){$isKeyAvaliable = true;}
 										?>
 									<?php if($isKeyAvaliable == false): ?>
-									                           <h2><?php echo 'SKU:&nbsp;<span>'.$_product->getSku().'</span>' ?></h2>
 									<div class="price-button-box">
 									<?php endif; ?>
 
