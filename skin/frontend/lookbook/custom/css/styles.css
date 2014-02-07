@@ -218,7 +218,7 @@ aside.sidebar-right { float: right !important;}
     display:none;
     text-decoration:none;
     position:fixed;
-    bottom:10px;
+    bottom:50px;
     right:10px;
     overflow:hidden;
     width:32px;
@@ -2782,9 +2782,13 @@ span.label-sale{background-color:#d3626a; top:43px;}
 	height: 24px;
 	padding:2px 0;
 	background: none;
-	background-color: #fff;
 	float: none!important;
 	display: inline-block!important;
+    border: 1px solid #fff;
+}
+.products-grid .btn-quick-view span:hover,
+.products-list .btn-quick-view span:hover{
+    opacity: .5;
 }
 .products-grid .btn-quick-view span span,
 .products-list .btn-quick-view span span{
@@ -2793,10 +2797,7 @@ span.label-sale{background-color:#d3626a; top:43px;}
 	text-transform: none;
 	font-size: 14px;
 	line-height: 18px;
-	/*/*background-color:#FFF;
-	border: 1px dotted;
-	border-left: none;
-	border-right: none;*/
+	/*/*background-color:#FFF;*/
 	position: relative;
 }
 .products-grid .btn-quick-view:hover span span,
@@ -6354,8 +6355,7 @@ body.firefox #onepagecheckout_orderform .onepagecheckout_datafields #checkout-pa
 #footer .block-subscribe .validation-advice{padding-top:0.42em;}
 
 
-.payment-icons-box { margin-bottom:15px; padding-bottom:15px; border-bottom:1px solid #E0E0E0; }
-
+.payment-icons-footer{float:right;}
 .payment-icons-list { overflow:hidden; }
 .payment-icons-list li { float:left; width:44px; height:28px; margin-right:10px; background:url(../img/icon/sprite.png); text-indent:-9999px; }
 .payment-icons-list li:last-child { margin-right:0; }
@@ -6410,7 +6410,35 @@ body.firefox #onepagecheckout_orderform .onepagecheckout_datafields #checkout-pa
 .mobile-device .nav > li.parent.active > a > span:before{
 	display: none;
 }
+/* =============================================================================
+   Brands
+   ========================================================================== */
+#brands-container{
+    width: 960px;
+    margin: 0 auto;
 
+}
+#brands-container .category-letter{
+    color: #000000;
+    font-size: 20px;
+}
+.brands-list-block{
+    text-align: center;
+}
+.brands-list-block a{
+    margin: 3px;
+}
+.brands-letter-list{
+    list-style-type: circle;
+}
+.listing{
+    padding: 10px;
+    margin: 5px 0 5px 0;
+    border: 1px solid #e0e0e0;
+    background: #f8f8f8;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+}
 
 /* Clears ================================================================================ */
 .clearer:after,
