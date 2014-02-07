@@ -1,4 +1,4 @@
-<?php 
+<?php
 /**
  * Magento
  *
@@ -96,7 +96,11 @@ header#header .menu-button:after,
 .products-list .btn-quick-view span span,
 .nav > li.active:before,
 .nav > li.active:after,
+.price-button-box .price-box .price,
+.price-button-box .price-box .old-price .price,
 .nav li.active a{color:#' . $this->baseColors['secondcolor'] . ';}
+
+button.button span{border-top:2px solid #' . $this->baseColors['secondcolor'] . ';}
 
 aside.sidebar section.block-layered-nav #slider-range.ui-slider .ui-slider-handle,
 #login-holder .close-button,
@@ -113,8 +117,6 @@ aside.sidebar section header .sidebar-icon,
 .product-view .product-shop .email-friend a:hover,
 .product-view .add-to-links li a:hover,
 .map-popup-heading,
-.price-button-box:after,
-.price-button-box .detailed-price-box,
 .products-list .add-to-links li a:hover,
 .products-grid .btn-quick-view i.circle-left,
 .products-list .btn-quick-view i.circle-left,
@@ -130,7 +132,8 @@ aside.sidebar .actions a,
 header#header .top-cart .block-content button.button > span,
 header#header .top-cart .img-container .cart-price-qt,
 header#header .top-cart .block-title .cart-button .button-arrow,
-header#header .top-cart .block-title .cart-button{background-color:#' . $this->baseColors['secondcolor'] . ';}
+header#header .top-cart .block-title .cart-button
+{background-color:#' . $this->baseColors['secondcolor'] . ';}
 
 .products-grid .top-box,
 .products-list .top-box{
@@ -161,14 +164,14 @@ header#header .menu-button span:after,
 	       	fwrite($fh, $data);
 	        fclose($fh);*/
 
-            $fh = new Varien_Io_File(); 
-            $fh->setAllowCreateFolders(true); 
+            $fh = new Varien_Io_File();
+            $fh->setAllowCreateFolders(true);
             $fh->open(array('path' => $this->dirPath));
-            $fh->streamOpen($this->filePath, 'w+'); 
-            $fh->streamLock(true); 
-            $fh->streamWrite($data); 
-            $fh->streamUnlock(); 
-            $fh->streamClose(); 
+            $fh->streamOpen($this->filePath, 'w+');
+            $fh->streamLock(true);
+            $fh->streamWrite($data);
+            $fh->streamUnlock();
+            $fh->streamClose();
     	}
     	catch (Exception $e) {
             Mage::getSingleton('adminhtml/session')->addError(Mage::helper('ThemeOptionsLookbook')->__('Failed creation custom css rules. '.$e->getMessage()));
