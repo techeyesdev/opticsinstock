@@ -2931,7 +2931,10 @@ span.label-sale{background-color:#d3626a; top:43px;}
 	float: none;
 	background: none;
 	height: auto;
-	padding-top: 14px;
+	padding-top: 8px;
+}
+.products-list .price-button-box button.button span span{
+    padding-top: 14px;
 }
 .price-button-box .animation-pane{
 	position: absolute;
@@ -3349,7 +3352,7 @@ span.label-sale{background-color:#d3626a; top:43px;}
 	float: left;
 	width:49%;
 	border-right: 1px solid #eee;
-	padding-bottom:2.34em;
+	padding-bottom:.74em;
 }
 .product-view .product-shop .product-left-col.full-width{
 	width: 100%;
@@ -3362,7 +3365,7 @@ span.label-sale{background-color:#d3626a; top:43px;}
 	position: relative;
 	margin-left: -1px;
 	border-left: 1px solid #eee;
-	padding-bottom:2.34em;
+	padding-bottom:1.34em;
 }
 .product-view .product-shop .product-right-col.bundled{
 	width: auto;
@@ -3443,11 +3446,11 @@ span.label-sale{background-color:#d3626a; top:43px;}
 }
 
 .product-view .product-shop .short-description{
-	padding:1.83em 12px 1.83em 15px;
+	margin:.73em 12px 1.83em 15px;
 	font-size: 0.91em;
 	line-height: 1.45em;
 }
-.product-view .product-shop .short-description h2{
+.product-view .product-shop .short-description h3{
 	color:#222;
 	text-transform: uppercase;
 	font-size: 1.27em;
@@ -4218,6 +4221,16 @@ span.label-sale{background-color:#d3626a; top:43px;}
 	padding:0;
 	background-color: transparent;
 	box-shadow: none;
+}
+/* Product Attributes */
+.product-attributes{
+    margin-top:10px;
+}
+.product-attributes li{
+    border-top:1px solid #eee;
+}
+.product-attributes h3{
+    margin-top:5px;
 }
 
 /* Product Collateral Accordion */
