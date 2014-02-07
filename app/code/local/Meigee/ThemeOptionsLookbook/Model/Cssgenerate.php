@@ -72,7 +72,7 @@ header#header .nav-container > ul .menu-item-button.active,
 .block-layered-nav dl#layered_navigation_accordion dt.closed .btn-nav,
 #categories-accordion li.level-top .btn-cat.closed i.icon-minus,
 header#header .top-cart .block-content .actions a,
-button.button > span{background-color:#' . $this->baseColors['maincolor'] . ';}
+.form-search button.button > span, .block-subscribe button.button > span{background-color:#' . $this->baseColors['maincolor'] . ';}
 
 /*======Skin Color #2=======*/
 header#header .menu-button:before,
@@ -92,15 +92,13 @@ header#header .menu-button:after,
 .price-button-box.active .price-box.map-info a,
 .price-button-box:hover .price-box.map-info a,
 .price-button-box button.button span span,
-.products-grid .btn-quick-view span span,
-.products-list .btn-quick-view span span,
 .nav > li.active:before,
 .nav > li.active:after,
 .price-button-box .price-box .price,
-.price-button-box .price-box .old-price .price,
+.price-button-box .price-box .old-price .price,.price-button-box .price-block label,
 .nav li.active a{color:#' . $this->baseColors['secondcolor'] . ';}
 
-button.button span{border-top:2px solid #' . $this->baseColors['secondcolor'] . ';}
+button.btn-cart span{border-top:2px solid #' . $this->baseColors['secondcolor'] . ';}
 
 aside.sidebar section.block-layered-nav #slider-range.ui-slider .ui-slider-handle,
 #login-holder .close-button,
