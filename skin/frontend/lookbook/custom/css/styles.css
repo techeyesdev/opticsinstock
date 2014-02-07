@@ -2791,12 +2791,12 @@ span.label-sale{background-color:#d3626a; top:43px;}
 	padding:2px 18px 0;
 	height: 20px;
 	text-transform: none;
-	font-size: 12px;
+	font-size: 14px;
 	line-height: 18px;
-	background-color:#FFF;
+	/*/*background-color:#FFF;
 	border: 1px dotted;
 	border-left: none;
-	border-right: none;
+	border-right: none;*/
 	position: relative;
 }
 .products-grid .btn-quick-view:hover span span,
@@ -2804,7 +2804,7 @@ span.label-sale{background-color:#d3626a; top:43px;}
 	background: none;
 }
 
-.products-grid .btn-quick-view i.circle-left,
+/*.products-grid .btn-quick-view i.circle-left,
 .products-list .btn-quick-view i.circle-left,
 .products-grid .btn-quick-view i.circle-right,
 .products-list .btn-quick-view i.circle-right{
@@ -2816,7 +2816,7 @@ span.label-sale{background-color:#d3626a; top:43px;}
 	position: absolute;
 	left: -6px;
 	top: 5px;
-}
+}*/
 
 .products-grid .btn-quick-view i.circle-right,
 .products-list .btn-quick-view i.circle-right{
