@@ -6439,7 +6439,17 @@ body.firefox #onepagecheckout_orderform .onepagecheckout_datafields #checkout-pa
     border-radius: 5px;
     -moz-border-radius: 5px;
 }
+.inchoo-socialconnect-login{
 
+}
+.inchoo-socialconnect-login li{
+    width:30%;
+    padding-right: .7em;
+    display: inline-block;
+}
+.buttons-set{
+    float:left;
+}
 /* Clears ================================================================================ */
 .clearer:after,
 .header-container:after,
