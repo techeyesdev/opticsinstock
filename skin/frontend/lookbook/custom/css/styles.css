@@ -2949,7 +2949,7 @@ span.label-sale{background-color:#d3626a; top:43px;}
 	color:#fff;
 }
 .price-button-box.active button.button span,
-.price-button-box:hover button.button span{
+.price-button-box button.button:hover span{
 	color:#000;}
 
 .price-button-box:hover .price-block .price-details,
