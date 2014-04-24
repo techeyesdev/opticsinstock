@@ -124,3 +124,9 @@ techdaily/
 /skin/frontend/lookbook/default/css/skin.css
 
 Archive.zip
+
+/app.zip
+
+/skin/frontend/lookbook/custom/images/
+
+/app/code/local/Meigee/ThemeOptionsLookbook/Model/Cssgenerate.php

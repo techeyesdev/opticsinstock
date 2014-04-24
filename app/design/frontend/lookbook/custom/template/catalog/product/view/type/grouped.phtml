@@ -46,9 +46,6 @@
             <?php if ($this->getCanShowProductPrice($_product)): ?>
             <th class="a-right"><?php echo $this->__('Price') ?></th>
             <?php endif; ?>
-            <th><?php echo $this->__('SKU') ?></th>
-            <th><?php echo $this->__('Magnification') ?></th>
-            <th><?php echo $this->__('Generation') ?></th>
             <?php if ($_product->isSaleable()): ?>
             <th class="a-center"><?php echo $this->__('Qty') ?></th>
             <?php endif; ?>
@@ -67,9 +64,6 @@
                 <?php echo $this->getTierPriceHtml($_item) ?>
                 <?php endif; ?>
             </td>
-            <td><?php echo $_item->getAttributeText('Sku'); ?></td>
-            <td><?php echo $_item->getAttributeText('Mag'); ?></td>
-            <td><?php echo $_item->getAttributeText('Itt_generation'); ?></td>
             <?php endif; ?>
             <?php if ($_product->isSaleable()): ?>
             <td class="a-center">

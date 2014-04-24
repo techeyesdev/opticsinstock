@@ -113,53 +113,6 @@
 								   <?php endif;?>
 
 								</div>
-								<div class="product-right-col<?php
-										if($_product->getTypeId() == Mage_Catalog_Model_Product_Type::TYPE_GROUPED){echo ' grouped';}
-										if(($_product->getTypeId() == Mage_Catalog_Model_Product_Type::TYPE_BUNDLE)){echo ' bundled';}
-										if (($_product->isConfigurable()) and (!$this->getChildChildHtml('container1', '', true, true))){echo ' block-off';}
-										if( ($_product->getTypeId() == 'simple') and ($this->getChildChildHtml('container1', '', true, true) == false) and  $this->hasOptions()){echo ' block-off';}
-									?>">
-									<?php if ($_product->isSaleable() && $this->hasOptions()):?>
-										<?php echo $this->getChildChildHtml('container1', '', true, true) ?>
-									<?php endif;?>
-									<?php
-										$keywords = array('price-excluding-tax', 'price-including-tax', 'map-info', 'grouped-items-table');
-										$exeption_flag = false;
-										$pricestring = $this->getChildHtml('product_type_data');
-										$isKeyAvaliable = false;
-										foreach($keywords as $word){
-											if(strpos($pricestring, $word)){
-												$isKeyAvaliable = true;
-											}
-										}
-										if($_product->isConfigurable()){$isKeyAvaliable = true;}
-										if($_product->getTypeId() == Mage_Catalog_Model_Product_Type::TYPE_BUNDLE){$isKeyAvaliable = true;}
-										if(($_product->getTypeId() == 'simple') and ($this->getChildChildHtml('container1', '', true, true)) and ($this->hasOptions())){$isKeyAvaliable = true;}
-										?>
-									<?php if($isKeyAvaliable == false): ?>
-									<div class="price-button-box">
-									<?php endif; ?>
-
-										<?php if(!$_product->isConfigurable()): ?>
-											<?php if(!(($_product->getTypeId() == 'simple') and ($this->getChildChildHtml('container1', '', true, true)) and ($this->hasOptions()))): ?>
-												<?php echo $this->getChildHtml('product_type_data'); ?>
-											<?php endif; ?>
-										<?php endif; ?>
-										<?php if (!$this->hasOptions()):?>
-										<div class="product-type-block">
-											<div class="add-to-box">
-											   <?php if($_product->isSaleable()): ?>
-												   <?php echo $this->getChildHtml('addtocart') ?>
-											   <?php endif; ?>
-											</div>
-											<?php echo $this->getChildHtml('extra_buttons') ?>
-										</div>
-										<?php endif; ?>
-
-									<?php if($isKeyAvaliable == false): ?>
-									</div>
-									<?php endif; ?>
-								</div>
 								<div class="clear"></div>
 							</div>
 							<?php echo $this->getChildHtml('alert_urls') ?>
