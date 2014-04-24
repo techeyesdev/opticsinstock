@@ -26,7 +26,6 @@ Default layout, loads most of the pages
 -->
 
     <default>
-
         <!-- Mage_Catalog -->
         <reference name="sidebar">
             <block type="themeoptionslookbook/bestsellers" name="bestsellers" as="bestsellers" before="-" template="catalog/product/bestsellers.phtml" />
