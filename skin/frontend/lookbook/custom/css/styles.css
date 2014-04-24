@@ -1705,7 +1705,6 @@ header#header .nav-container .sbSelector{display:none;}
     z-index:10;
     clear:both;
     padding:12px 0 10px;
-	float: right;
 }
 
 /* All Levels */
@@ -2575,7 +2574,7 @@ span.label-sale{background-color:#d3626a; top:43px;}
 }
 .products-grid.last { border-bottom:0; }
 .products-grid li.item { float:left; padding:0 0 2.34em; position:relative;}
-.products-grid .product-image { position:relative; display:block; padding:0; text-align:center; margin:0 0 0.75em; }
+.products-grid .product-image { position:relative; display:block; padding:0; text-align:center; margin:0 0 0.75em; min-height:190px;}
 .products-grid .product-image img{width:100%;}
 .products-list .top-box,
 .products-grid .top-box{
