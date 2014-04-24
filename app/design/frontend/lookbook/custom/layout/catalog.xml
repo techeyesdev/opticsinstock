@@ -210,6 +210,8 @@ Product view
                     <action method="addTab" translate="title" module="catalog"><alias>description</alias><title>Product Description</title><block>catalog/product_view_description</block><template>catalog/product/view/description.phtml</template></action>
                     <action method="addTab" translate="title" module="catalog"><alias>upsell_products</alias><title>We Also Recommend</title><block>catalog/product_list_upsell</block><template>catalog/product/list/upsell.phtml</template></action>
                     <action method="addTab" translate="title" module="catalog"><alias>additional</alias><title>Product Specifications</title><block>catalog/product_view_attributes</block><template>catalog/product/view/attributes.phtml</template></action>
+                    <action method="addTab" translate="title" module="catalog"><alias>related_videos</alias><title>Related Videos</title><block>catalog/product_view_attributes</block><template>catalog/product/view/videos.phtml</template></action>
+                    <action method="addTab" translate="title" module="catalog"><alias>Downloads</alias><title>Downloads</title><block>catalog/product_view_attributes</block><template>catalog/product/view/downloads.phtml</template></action>
                 </block>
 
                 <block type="catalog/product_view_description" name="product.description" as="description" template="catalog/product/view/description.phtml">

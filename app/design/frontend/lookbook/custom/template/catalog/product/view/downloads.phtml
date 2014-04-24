@@ -1,0 +1,6 @@
+<?php $_downloads = $this->getProduct()->getDownloads(); ?>
+<?php if ($_downloads): ?>
+    <div class="std">
+        <?php echo nl2br($this->helper('catalog/output')->productAttribute($this->getProduct(), $_downloads, 'video')) ?>
+    </div>
+<?php endif; ?>

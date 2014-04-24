@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Techeyes_WysiwygFiles>
+      <active>true</active>
+      <codePool>local</codePool>
+    </Techeyes_WysiwygFiles>
+  </modules>
+</config>
